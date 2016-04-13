@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C57D0C4D1CBD742E009927B7 /* trash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D0C4C1CBD742E009927B7 /* trash.swift */; };
 		C5F02BE91CB97697008DF574 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F02BE81CB97697008DF574 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C57D0C441CBB1F49009927B7 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		C57D0C451CBD55F7009927B7 /* Finder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Finder.h; sourceTree = "<group>"; };
+		C57D0C481CBD6B92009927B7 /* trash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "trash-Bridging-Header.h"; sourceTree = "<group>"; };
+		C57D0C4C1CBD742E009927B7 /* trash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trash.swift; sourceTree = "<group>"; };
 		C5F02BE51CB97697008DF574 /* trash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = trash; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F02BE81CB97697008DF574 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +46,7 @@
 		C5F02BDC1CB97697008DF574 = {
 			isa = PBXGroup;
 			children = (
+				C57D0C441CBB1F49009927B7 /* readme.md */,
 				C5F02BE71CB97697008DF574 /* trash */,
 				C5F02BE61CB97697008DF574 /* Products */,
 			);
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				C5F02BE81CB97697008DF574 /* main.swift */,
+				C57D0C4C1CBD742E009927B7 /* trash.swift */,
+				C57D0C481CBD6B92009927B7 /* trash-Bridging-Header.h */,
+				C57D0C451CBD55F7009927B7 /* Finder.h */,
 			);
 			path = trash;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57D0C4D1CBD742E009927B7 /* trash.swift in Sources */,
 				C5F02BE91CB97697008DF574 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,14 +221,21 @@
 		C5F02BED1CB97697008DF574 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "trash/trash-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C5F02BEE1CB97697008DF574 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "trash/trash-Bridging-Header.h";
 			};
 			name = Release;
 		};
