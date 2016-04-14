@@ -11,6 +11,16 @@ Empty the trash:
 $ trash -e
 ```
 
+## Installation
+Either manually clone and build like any other Xcode project.
+Or, use Homebrew:
+```shell
+$ brew tap sunmix/tap
+```
+```shell
+$ brew install sunmix/tap/trash
+```
+
 ## Inspired By
 1. [osx-trash](https://github.com/sindresorhus/osx-trash)
 2. [trash](https://github.com/ali-rantakari/trash)
